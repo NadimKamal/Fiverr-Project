@@ -1,0 +1,348 @@
+* {}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    padding: 25px 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: 1320px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.logo {
+    width: 20%;
+    float: left;
+}
+
+.logo a {}
+
+.logo a img {
+    width: 120px;
+}
+
+nav {
+    width: 80%;
+    float: right;
+}
+
+nav ul {
+    text-align: right;
+    margin: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 4px;
+    display: block;
+    position: relative;
+}
+
+nav ul li a:after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #1DBF73;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.4s;
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+}
+
+nav ul li a img {
+    display: inline-block;
+    max-height: 18px;
+}
+
+nav ul li a span {
+    color: #1DBF73;
+}
+
+h1 {
+    padding-top: 100px;
+    font-weight: 700;
+    font-size: 35px;
+    margin-left: 12px;
+}
+
+.gallery-section {}
+
+h2 {
+    font-size: 25px;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.gallery {
+    width: 33.333%;
+    float: left;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 35px;
+}
+
+.gallery a img {
+    -webkit-transition-property: width, height;
+    -webkit-transition-duration: 2s;
+    transition-property: width, height;
+    transition-duration: 2s;
+}
+
+.gallery a img:hover {
+    width: 100%;
+    height: 100%;
+    /*color: black;*/
+}
+
+h2:hover {
+    color: #1DBF73;
+}
+
+.gallery a img h3 {
+    font-size: 10px;
+}
+
+.container a p {
+    font-size: 15px;
+    color: #a7a1a1;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.container a p b {
+    font-size: 15px;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container a p:hover {
+    color: #1DBF73;
+}
+
+.container a p b:hover {
+    color: #1DBF73;
+}
+
+h3 {}
+
+.footer-section {}
+
+footer {
+    margin: 0;
+    width: 100%;
+    background-color: #eaeaea;
+}
+
+.footer-menu {
+    margin-bottom: 35px;
+}
+
+.footer-menu div {
+    display: inline-flex;
+    padding-left: 130px;
+    padding-top: 40px;
+}
+
+.footer-menu div ul {
+    font-size: 20px;
+}
+
+.footer-menu ul {
+    list-style-type: none;
+}
+
+.footer-menu ul li {
+    padding-bottom: 10px;
+}
+
+.footer-menu ul li a {
+    color: #676161;
+}
+
+.footer-menu ul li a:hover {
+    color: #1DBF73;
+}
+
+.footer-menu ul li span {
+    font-size: 17px;
+    color: #a3a5a7;
+}
+
+.categories {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.categories ul {
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.categories ul li {}
+
+.categories ul li span {}
+
+.categories ul li a {}
+
+.about {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.about ul {
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.about ul li {}
+
+.about ul li span {}
+
+.about ul li a {}
+
+.support {
+    margin-top: 0px;
+}
+
+.support ul {
+    margin: 0 auto;
+}
+
+.support ul li {}
+
+.support ul li span {}
+
+.support ul li a {}
+
+.fab {}
+
+.fab ul {}
+
+.fab li {
+    display: inline-block;
+    padding-left: 0px;
+    padding-right: 10px;
+}
+
+.fab li a {}
+
+.social {
+    margin-top: 0px;
+}
+
+.social div {
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
+.social ul {
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.social ul li {}
+
+.social ul li span {}
+
+.social ul li a {}
+
+.social ul li a input {
+    color: #1DBF73;
+    border-color: #1DBF73;
+    background-color: white;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid #1DBF73;
+    border-radius: 5px;
+}
+
+.social ul li a input:hover {
+    color: white;
+    background-color: #1DBF73;
+}
+
+.copyright {
+    font-size: 12px;
+    padding: 30px 0;
+    text-align: center;
+    font-weight: 600;
+    color: black;
+    border-top: 1px solid #efefef;
+}
+
+.copyright p {}
+
+ul {}
+
+.overlay {
+    position: relative;
+}
+
+.overlay:after {
+    content: "";
+    position: absolute;
+    background: #00000099;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.gallery a:hover .overlay:after {
+    opacity: 1;
+}
+
+.overlay img {}
+
+.overlay h1 {
+    color: white;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 0;
+    text-transform: lowercase;
+}
+
+.gallery a:hover .overlay h1 {
+    opacity: 1;
+}
+
+.gallery a:hover h2 {
+    color: #1DBF73;
+}
+.overlay h1:after {
+	content: ".";
+	color: #1DBF73;
+}
